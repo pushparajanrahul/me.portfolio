@@ -145,6 +145,8 @@ params:
           url: https://github.com/pushparajanrahul
         - icon: fab fa-x-twitter
           url: https://example.com
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/pushparajanrahul
       customIcons:
         - icon: /logo.png
           url: "https://example.com"
