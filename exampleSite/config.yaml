@@ -126,23 +126,23 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-    image: /images/hero.svg
+    title: "Rahul."
+    subtitle: "I bind control systems with AI"
+    content: "A passionate MLOps and Control Systems Engineer. I try to bind the "
+    image: /images/mypic.jpeg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/file/d/1lwlhzdUlrPHzSjJs4IevNr7DkgYht_no/view?usp=sharing"
+      url: "https://drive.usercontent.google.com/download?id=1lwlhzdUlrPHzSjJs4IevNr7DkgYht_no&export=download&authuser=0"
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/pushparajanrahul
         - icon: fab fa-x-twitter
           url: https://example.com
       customIcons:
