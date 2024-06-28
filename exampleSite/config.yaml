@@ -1,4 +1,4 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://pushparajanrahul.netlify.app/"
 languageCode: "en-us"
 title: "Rahul"
 theme: hugo-profile
@@ -128,7 +128,7 @@ params:
     intro: "Hi, my name is"
     title: "Rahul."
     subtitle: "I bind control systems with AI"
-    content: "A passionate MLOps and Control Systems Engineer. I try to bind the "
+    content: "I am a passionate MLOps and Control Systems Engineer. I create intelligent systems by integrating Artificial Intelligence into Robotics, Autonomous Systems, and for Image Analysis"
     image: /images/mypic.jpeg
     bottomImage:
       enable: true
