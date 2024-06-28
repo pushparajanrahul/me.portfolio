@@ -56,7 +56,7 @@ params:
   title: "Hugo Profile"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/logo.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -126,7 +126,7 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Rahul."
+    title: "Rahul"
     subtitle: "I bind control systems with AI"
     content: "I am a passionate MLOps and Control Systems Engineer. I create intelligent systems by integrating Artificial Intelligence into Robotics, Autonomous Systems, and for Image Analysis"
     image: /images/mypic.jpeg
@@ -146,7 +146,7 @@ params:
         - icon: fab fa-x-twitter
           url: https://example.com
       customIcons:
-        - icon: /fav.png
+        - icon: /logo.png
           url: "https://example.com"
 
   # About
