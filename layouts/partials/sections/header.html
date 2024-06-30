@@ -60,13 +60,6 @@
                 {{ end }}
             </a>
 
-            {{ if not (.Site.Params.navbar.disableSearch | default false) }}
-                <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default "Ctrl + k to Search..."}}'
-                        aria-label="Search" oninput="searchOnChange(event)">
-                </div>
-            {{ end }}
-
             <!-- navbar toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
