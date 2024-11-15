@@ -126,7 +126,7 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Rahul Pushparajan"
+    title: "Rahul P"
     subtitle: "Machine Learning Engineer"
     content: "I am a passionate MLOps and Control Systems Engineer. I create intelligent systems by integrating Artificial Intelligence into Robotics, Autonomous Systems, and for Image Analysis"
     image: /images/mypic.jpeg
