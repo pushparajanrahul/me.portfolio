@@ -155,11 +155,7 @@ params:
     title: "About Me"
     image: "/images/myphoto2.jpg"
     content: |-
-      I am a versatile professional with a strong background in Process Automation, now dedicated to the dynamic field of AI and Machine Learning. Specializing in perception, computer vision, reinforcement learning strategies, and deep neural networks, I bring a strategic and innovative mindset to every project. I thrive on leveraging technology to drive impactful solutions and am committed to excellence. Let's connect to explore the intersection of industry expertise and cutting-edge machine learning.
 
-      I currently work as a Graduate Student Assistant responsible for MLOps and deployement for the Department for MSN at Arizona State Univeristy, Tempe, Arizona.
-      
-      I am currently working on a project that will be used to prototype and deploy a Supply and Demand Open Knowledge Network employing Large Language Model.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
