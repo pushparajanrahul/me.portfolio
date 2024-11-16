@@ -178,11 +178,15 @@
 }
 
 #single aside.aboutImg img {
-    border-radius: 1.5rem !important;
+    border-radius: 0.5rem !important;  /* reduced from 1.5rem for smoother edges */
     position: relative;
     /* box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2); */
     max-width: 100%;
+    aspect-ratio: 3/4;  /* this will maintain a rectangular shape */
+    object-fit: cover;  /* this ensures the image fills the container properly */
+    width: 100%;  /* ensures the image takes full width of its container */
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
     #single aside.aboutImg img {
         width: 60%;

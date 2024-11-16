@@ -136,7 +136,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.usercontent.google.com/download?id=1lwlhzdUlrPHzSjJs4IevNr7DkgYht_no&export=download&authuser=0"
+      url: "https://drive.usercontent.google.com/download?id=18xWwynPsU6BKSP1EEqT-N1ZuhvxSqf4y&export=download&authuser=2&confirm=t&uuid=d3987c6d-f553-418a-8aaf-b51aaf3b64d5&at=AENtkXZvSABhovuOl3z0ok9Kn4rZ:1731743087768"
       download: true
       newPage: false
     socialLinks:
@@ -157,9 +157,7 @@ params:
     content: |-
       My journey in Machine Learning Engineering spans across various domains of supervised and unsupervised learning.
       
-      Through this portfolio, I'm sharing key projects and experiences that reflect my work with computer vision tasks - from binary classification using CNN architectures to more complex image analysis involving localization and segmentation using state-of-the-art models.
-      
-      My research work encompasses anomaly detection systems and the implementation of various clustering techniques for pattern recognition.
+      Through this portfolio, I'm sharing key projects and experiences that reflect my work with computer vision tasks - from binary classification using CNN architectures to more complex image analysis involving localization and segmentation using state-of-the-art models and more.
       
       In the realm of natural language processing, my work involves leveraging pre-trained Large Language Models (LLMs) through direct prompting and in-context learning approaches for enhanced label generation and task performance.
       
