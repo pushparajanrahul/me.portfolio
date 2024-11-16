@@ -155,8 +155,17 @@ params:
     title: "About Me"
     image: "/images/myphoto2.jpg"
     content: |-
-      My journey in Machine Learning Engineering spans across various domains of supervised and unsupervised learning. Through this portfolio, I'm sharing key projects and experiences that reflect my work with computer vision tasks - from binary classification using CNN architectures to more complex image analysis involving localization and segmentation using state-of-the-art models. My research work encompasses anomaly detection systems and the implementation of various clustering techniques for pattern recognition.
-      In the realm of natural language processing, my work involves leveraging pre-trained Large Language Models (LLMs) through direct prompting and in-context learning approaches for enhanced label generation and task performance. The portfolio also showcases projects involving matching algorithms, ranking systems, and low-rank adaptation techniques for model fine-tuning. Additionally, I've worked on recommendation systems and explored multimodal learning approaches that bridge different data modalities. Through these projects and my published blog articles, I aim to share insights from my ongoing exploration in the field of machine learning engineering.
+      My journey in Machine Learning Engineering spans across various domains of supervised and unsupervised learning.
+      
+      Through this portfolio, I'm sharing key projects and experiences that reflect my work with computer vision tasks - from binary classification using CNN architectures to more complex image analysis involving localization and segmentation using state-of-the-art models.
+      
+      My research work encompasses anomaly detection systems and the implementation of various clustering techniques for pattern recognition.
+      
+      In the realm of natural language processing, my work involves leveraging pre-trained Large Language Models (LLMs) through direct prompting and in-context learning approaches for enhanced label generation and task performance.
+      
+      The portfolio also showcases projects involving matching algorithms, ranking systems, and low-rank adaptation techniques for model fine-tuning. Additionally, I've worked on recommendation systems and explored multimodal learning approaches that bridge different data modalities.
+      
+      Through these projects and my published blog articles, I aim to share insights from my ongoing exploration in the field of machine learning engineering.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
