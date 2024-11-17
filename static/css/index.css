@@ -391,6 +391,22 @@ header .navbar.animate {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive design */
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 0;
+        padding-left: 30px;
+    }
+
+    .timeline-item::before {
+        left: -23px;  /* Adjusted for mobile */
+    }
+
+    .timeline::before {
+        left: 7px;  /* Keep the line centered with dots on mobile */
+    }
+}
+
 #----------------------------------------------------
 #experience a {
     opacity: 0.9;
