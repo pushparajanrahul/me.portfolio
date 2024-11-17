@@ -128,7 +128,7 @@ params:
     intro: "Hi, my name is"
     title: "Rahul P"
     subtitle: "ML Research | Vision Systems | LLM Applications"
-    content: "I'm an Automation Engineer turned Machine Learning enthusiast from India, currently serving as a Research Assistant at Arizona State University's Semantic Computing Lab, where I collaborate with Prof. Farhad Ameri, Prof. Hyungwoong Ko, and Prof. Srividya Bansal."
+    content: "I'm an Automation Engineer turned Machine Learning enthusiast from India, currently serving as a Research Assistant at Arizona State University's Semantic Computing Lab for an NSF funded research, developing a Multi-Modal Open Knowledge Network leveraging "
     image: /images/mypic.jpeg
     bottomImage:
       enable: true

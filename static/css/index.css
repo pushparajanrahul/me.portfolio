@@ -262,7 +262,6 @@ header .navbar.animate {
 }
 
 /* experience */
-
 #experience h3 {
     color: var(--text-secondary-color) !important;
 }
@@ -271,119 +270,60 @@ header .navbar.animate {
     background-color: transparent !important;
 }
 
-#experience .tab-pane > * {
-    opacity: 0.9;
-}
-
-#experience .tab-pane small {
-    opacity: 0.8;
-}
-
-#experience .tab-pane ul {
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-#experience .experience-container .tab-content > .tab-pane p {
-    padding: 1% 0;
-    margin: 0;
-}
-
 #experience .experience-container {
     background-color: var(--secondary-color) !important;
     border-radius: .75rem;
     box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
     width: 100%;
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Optional padding */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-#experience .nav-item .nav-link {
-    color: var(--text-color) !important;
-    border-bottom: 2px solid transparent; 
-    border-radius: 0%;
-    transition: none;
-    cursor: pointer;
-}
-
-#experience .nav-item .nav-link.active {
-    color: var(--text-color) !important;
-    border-bottom: 2px solid var(--primary-color); 
-    opacity: 0.8;
-}
-
-#experience .nav-item .nav-link.active:hover { 
-    transition: none !important;
-}
-
-#experience .nav-item .nav-link:hover {
-    border-bottom: 2px solid var(--primary-color);
-    opacity: 0.8;
-}
-
-/* Timeline specific styles */
+/* Timeline Container */
 .timeline {
     position: relative;
     margin-left: 20px;
     padding-left: 50px;
 }
 
+/* The vertical line */
 .timeline::before {
     content: '';
     position: absolute;
-    left: 7px;  /* Adjusted to center the line with the dots */
+    left: 7px;
     top: 0;
     height: 100%;
     width: 2px;
     background-color: #4CAF50;
 }
 
-/* The timeline markers/dots */
+/* Timeline Items */
 .timeline-item {
     position: relative;
     margin-bottom: 50px;
 }
 
+/* Timeline Markers/Dots */
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -43px;  /* Adjusted to center with the line */
+    left: -43px;
     top: 0;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #4CAF50;  /* Solid fill color */
-    border: none;  /* Removed border */
-    z-index: 1;  /* Ensure dot appears above the line */
+    background-color: #4CAF50 !important;
+    z-index: 1;
 }
 
-.timeline-item:last-child {
-    margin-bottom: 0;
-}
-
-.marker {
-    position: absolute;
-    left: -3.3rem;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid #4CAF50;
-    background-color: #4CAF50;
-    transition: background-color 0.3s ease;
-}
-
-.timeline-item:hover .marker {
-    background-color: var(--primary-color) !important;
-}
-
-/* The content card */
+/* Timeline Content */
 .timeline-content {
-    background: var(--secondary-color);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color) !important;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .timeline-content:hover {
@@ -391,23 +331,7 @@ header .navbar.animate {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .timeline {
-        margin-left: 0;
-        padding-left: 30px;
-    }
-
-    .timeline-item::before {
-        left: -23px;  /* Adjusted for mobile */
-    }
-
-    .timeline::before {
-        left: 7px;  /* Keep the line centered with dots on mobile */
-    }
-}
-
-#----------------------------------------------------
+/* Links Styling */
 #experience a {
     opacity: 0.9;
     display: inline-block;
@@ -426,9 +350,77 @@ header .navbar.animate {
     opacity: 0.5;
 }
 
-#experience a:hover::after, #experience a:focus::after, #experience a:active::after {
+#experience a:hover::after,
+#experience a:focus::after,
+#experience a:active::after {
     width: 100%;
 }
+
+/* Content Text Styles */
+#experience .timeline-content > * {
+    opacity: 0.9;
+}
+
+#experience .timeline-content small {
+    opacity: 0.8;
+}
+
+#experience .timeline-content ul {
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+#experience .timeline-content ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+#experience .timeline-content ul li::before {
+    content: "▹";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0px;
+}
+
+/* Featured Link Button */
+#experience .featuredLink {
+    margin-top: 15px;
+}
+
+#experience .featuredLink a.btn {
+    border: 1px solid var(--primary-color);
+    border-radius: .75rem;
+    transition: none;
+    padding: 0.5rem 1rem;
+}
+
+#experience .featuredLink a.btn:focus {
+    box-shadow: none;
+}
+
+#experience .featuredLink a.btn:hover {
+    color: var(--text-color) !important;
+    opacity: 0.7;
+}
+
+#experience .featuredLink a::after {
+    display: none;
+}
+
+/* Date and Info Styles */
+#experience .timeline-content .pb-1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#experience .timeline-content .h4 {
+    margin-bottom: 0.5rem;
+}
+
 
 #experience .experience-container .tab-content .tab-pane ul {
     overflow: hidden;
@@ -473,6 +465,53 @@ header .navbar.animate {
     color: var(--text-color) !important;
     opacity: 0.7;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 0;
+        padding-left: 30px;
+    }
+
+    .timeline-item::before {
+        left: -23px;
+    }
+
+    .timeline::before {
+        left: 7px;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
+
+    #experience .experience-container {
+        padding: 15px;
+    }
+}
+
+/* Animation for new items */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation with delay for each item */
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+.timeline-item:nth-child(5) { animation-delay: 0.5s; }
+
+
 
 /* Education */
 
