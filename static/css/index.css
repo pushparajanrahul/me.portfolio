@@ -333,12 +333,12 @@ header .navbar.animate {
 .timeline::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 7px;
     top: 0;
     height: 100%;
     width: 2px;
     background-color: var(--primary-color);
-    opacity: 0.3;
+    opacity: #4CAF50;
 }
 
 .timeline-item {
