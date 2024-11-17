@@ -256,57 +256,65 @@
 }
 
 /* Add these styles to your about.css */
+/* Add these styles to your about.css */
 .frames-container {
     position: relative;
-    height: 500px;  /* Adjust based on your needs */
+    height: 700px;  /* Increased height to accommodate all images */
     width: 100%;
+    padding: 0;
 }
 
+/* Remove any previous .image and .d-flex styles that might interfere */
+.image.d-flex {
+    padding: 0;
+    position: relative;
+}
+
+/* Individual frame styling */
 .frame {
-    position: absolute;
-    width: 300px;  /* Adjusted base size */
-    height: 300px;
-    overflow: hidden;
+    position: absolute; /* This is crucial for overlapping */
+    width: 300px;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .frame img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 5px solid var(--secondary-color); /* Subtle border */
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
+/* Position each frame */
 .frame1 {
     top: 0;
     left: 0;
-    z-index: 3;
-    width: 250px;  /* Slightly smaller */
-    height: 250px;
+    width: 400px; /* Largest size */
+    z-index: 1;
 }
 
 .frame2 {
-    top: 100px;
-    left: 150px;
+    top: 200px; /* Move down */
+    left: 150px; /* Move right */
+    width: 350px; /* Medium size */
     z-index: 2;
-    width: 280px;  /* Medium size */
-    height: 280px;
 }
 
 .frame3 {
-    top: 200px;
-    left: 50px;
-    z-index: 1;
-    width: 300px;  /* Largest */
-    height: 300px;
+    top: 400px; /* Move further down */
+    left: 50px; /* Slightly right of first image */
+    width: 300px; /* Smallest size */
+    z-index: 3;
 }
 
-/* Remove any existing background or border styles */
-.image.d-flex {
-    padding: 0;
-}
-
+/* Remove default bootstrap thumbnail styling */
 .img-thumbnail {
     border: none;
     padding: 0;
-    background: transparent;
+    background: none;
+    border-radius: 0;
 }
