@@ -337,8 +337,8 @@ header .navbar.animate {
     top: 0;
     height: 100%;
     width: 2px;
-    background-color: var(--primary-color);
-    opacity: #4CAF50;
+    background-color: #4CAF50;
+    opacity: 1.0;
 }
 
 .timeline-item {
