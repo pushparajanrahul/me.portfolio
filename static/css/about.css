@@ -255,26 +255,17 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Add these styles to your about.css */
-/* Add these styles to your about.css */
 .frames-container {
     position: relative;
-    height: 700px;  /* Increased height to accommodate all images */
+    height: 400px;  /* Reduced overall container height */
     width: 100%;
     padding: 0;
 }
 
-/* Remove any previous .image and .d-flex styles that might interfere */
-.image.d-flex {
-    padding: 0;
-    position: relative;
-}
-
-/* Individual frame styling */
 .frame {
-    position: absolute; /* This is crucial for overlapping */
-    width: 300px;
-    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    width: 200px;  /* Significantly reduced base width */
+    height: auto;
     display: block;
     margin: 0;
     padding: 0;
@@ -289,29 +280,28 @@
     border: none;
 }
 
-/* Position each frame */
+/* Adjusted positioning for diagonal overlap */
 .frame1 {
     top: 0;
     left: 0;
-    width: 400px; /* Largest size */
-    z-index: 1;
+    width: 180px;  /* Smallest */
+    z-index: 3;
 }
 
 .frame2 {
-    top: 200px; /* Move down */
-    left: 150px; /* Move right */
-    width: 350px; /* Medium size */
+    top: 80px;  /* Reduced spacing */
+    left: 100px;  /* Moved right for overlap */
+    width: 180px;  /* Same size */
     z-index: 2;
 }
 
 .frame3 {
-    top: 400px; /* Move further down */
-    left: 50px; /* Slightly right of first image */
-    width: 300px; /* Smallest size */
-    z-index: 3;
+    top: 160px;  /* Reduced spacing */
+    left: 200px;  /* Moved right more */
+    width: 180px;  /* Same size */
+    z-index: 1;
 }
 
-/* Remove default bootstrap thumbnail styling */
 .img-thumbnail {
     border: none;
     padding: 0;
