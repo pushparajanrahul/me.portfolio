@@ -298,23 +298,23 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - - title: Predictive Maintenance ML System for Industrial Pumps with Cloud Deployment
-          content: An end-to-end ML system that predicts industrial pump failures using sensor data, featuring real-time monitoring through a Streamlit dashboard and robust cloud deployment on AWS.
-          image: /images/projects/Project1.jpg
-          featured:
-            enable: false
-            name: Demo
-            link: https://hugo-profile.netlify.app
-          badges:
-            - "Python"
-            - "TensorFlow"
-          links:
-            # - icon: fa fa-envelope
-            #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-            - icon: fab fa-github
-              url: https://github.com/gurusabarish/hugo-profile
-            # - icon: fab fa-twitter
-            #  url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+      - title: Predictive Maintenance ML System for Industrial Pumps with Cloud Deployment
+        content: An end-to-end ML system that predicts industrial pump failures using sensor data, featuring real-time monitoring through a Streamlit dashboard and robust cloud deployment on AWS.
+        image: /images/projects/Project1.jpg
+        featured:
+          enable: false
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "Python"
+          - "TensorFlow"
+        links:
+          # - icon: fa fa-envelope
+          #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          # - icon: fab fa-twitter
+          #  url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
 
       - title: Enhanced Medical Image Analysis using UNet++
