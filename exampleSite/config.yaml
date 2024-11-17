@@ -166,21 +166,22 @@ params:
       Through these projects and my published blog articles, I aim to share insights from my ongoing exploration in the field of machine learning engineering.
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "Here are a few Machine Learning profiles I've been working with recently:"
       items:
-        - "C/CPP"
-        - "Python"
-        - "AWS"
-        - "Tensorflow"
-        - "Pytorch"
-        - "Reinforcement Learning"
+        - "Develop and Deploy Tiny ML model to Edge device for edge applications"
+        - "Image Classification - Binary and Multi label "
+        - "Image Localization"
+        - "Image Segmentation"
+        - "BERT encoder for NLP scenarios"
+        - "GPT-4o VLM for Image Labelling task"
+        - "Leveraging LoRA to finetune CogVLM"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Graduate Student Assistant"
+      - job: "Graduate Service Assistant - ML Engineer"
         company: "Arizona State University"
         companyUrl: "https://labs.engineering.asu.edu/semantics/"
         date: "June 2024 - present"
@@ -188,20 +189,28 @@ params:
           enable: false
           name: "View the project"
           url: "https://example.com"
-        content: "I am currently working on a project that will be used to prototype and deploy a Supply and Demand Open Knowledge Network employing Large Language Model."
+        content: |
+          - Led the development of a large-scale multimodal image labeling system for manufacturing supply chain optimization (not-for-profit organization), processing 11,000+ manufacturer websites to build an extensive product/equipment image dataset.
+          - Implemented an ethical web crawler using Python's aiohttp and BeautifulSoup4, incorporating robots.txt validation and SSL security checks, with intelligent rate limiting and error handling for robust data collection.
+          - Engineered an automated image processing pipeline using torchvision, handling format standardization, resolution normalization (512x512), and quality filtering to ensure consistent input for the vision-language model (CogVLM and OpenAI).
+          - Developed an asynchronous batch processing system using Python's asyncio, managing memory efficiently while processing large volumes of manufacturing website data with automatic retries and error recovery.
+          - Architected a custom VLMLabeler class utilizing the CogVLM-Chat-HF/OpenAI-gpt-4v model, implementing sophisticated prompt engineering techniques using VQA/ Chat completion format for multi-label classification of manufacturing equipment and products.
+          - Created an extensible labeling framework with clean abstraction layers, comprehensive logging, and robust error handling, achieving 95% uptime during large-scale data processing.
+          - Currently improving baseline model performance by implementing In-Context Learning (ICL) prompting strategies, laying groundwork for domain adaptation using LoRA (Low-Rank Adaptation) fine-tuning techniques to create a manufacturing-specific vision-language model.
 
-      - job: "Industrial Automation Lab Assitant"
+      - job: "Automation Lab Assistant"
         company: "Arizona State University"
-        companyUrl: "https://example.com"
+        companyUrl: "https://asu.edu"
         date: "June 2023 - present"
         featuredLink:
-          enable: false
-          url: "https://example.com"
+          enable: true
+          url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffullcircle.asu.edu%2Ffulton-schools%2Fasu-engineering-lab-space-drives-student-and-industry-collaborations%2F&psig=AOvVaw2kakxJ_9ID2ON6WcnL0HEt&ust=1731943733852000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCOiY-arX44kDFQAAAAAdAAAAABAE"
         info:
           enable: false
           content: I worked as a software developer for more than one year in Amazon.
         content: |
-          I am currently working as an Industrial Automation Engineer where I have been designing a Autonomous System using a UR3e binded with Reinforcement Learning using to identify object in an assembly line.
+          - Developed a ROS-based system integrating a UR3e robotic arm using the Universal_ROS_Driver github repository, Robotiq gripper, and Arducam USB camera for vision-guided object sorting, leveraging reinforcement learning techniques, and integrated the hardware pipeline using EthernetIP protocol. The project is still on its development stage focusing on RL techniques.
+          - Implemented custom ROS nodes for robot control, image processing, and reinforcement learning, enabling real-time decision-making (using a PREEMT RT Kernel for Linux) for object identification and manipulation.
 
       - job: "Senior Project Engineer"
         company: "Schneider Electric"
@@ -213,12 +222,13 @@ params:
           enable: false
           url: "https://example.com"
         content: |
-          - Utilized and maintained a Honeywell APC Smart Supervisor Machine Learning infrastructure for a Petrochemical client to predict process variables and forecast changes in operating limits, leading to a 40% overall production efficiency.
-          - Implemented cybersecurity measures in a network encompassing 158 stations, including domain server configuration and automated system backup, patch and firmware update, CISCO firewall configuration, for a petrochemical client, achieving an increase in overall network security by 30%.
-          - Commissioned a Brownfield unit for a pharmaceutical client to revamp all the operational continuous process over batch sequence Integrating Foxboro DCS and Siemens PLC over Modbus; resulting in a reduced production cycle time by 40%.
+          - Spearheaded the prototype development Time-Series model to predict process variable associated in a process automation pipeline with SE R&D team, reducing production loss by 25% from data captured from Schneider Maintenance Response Center System.
+          - Harnessed SQL to query Plant Data Servers including conditional, case statements and subqueries, extracting and analyzing 100,000+ data points daily, enabling visualization of data distribution and estimation of production losses, resulting in a 15% reduction in unplanned downtime and a 10% increase in overall equipment effectiveness (OEE).
+          - Implemented and maintained a Honeywell APC Smart Supervisor Machine Learning infrastructure for a petrochemical client, leading to a 40% increase in overall production efficiency and reducing production loss by 15%.
+          - Architected cybersecurity measures in a network encompassing 158 stations, including domain server configuration and automated system backup, patch and firmware update, CISCO firewall configuration, for a petrochemical client, achieving an increase in overall network security by 30%.
 
-      - job: "Project Application Engineer"
-        company: "Invensys - Acquired by Schneider Electric"
+      - job: "Project Engineer"
+        company: "Schneider Electric"
         companyUrl: "https://se.com"
         date: "Sep 2013 - Jun 2015"
         featuredLink:
@@ -256,15 +266,15 @@ params:
         date: "2009 - 2013"
         GPA: "7.3 out of 10.0"
         content: |-
-          I Publiced one papers in the International Journal of Enhanced Research in Science Technology & Engineering.
+          I was excited to extend our research into authoring a papers in the International Journal of Enhanced Research in Science Technology & Engineering.
           - [Wireless Automation of Multi-process using Labview](https://www.erpublications.com/uploaded_files/download/download_03_02_2014_05_58_19.pdf)
           - The Project focuses about the wireless automation of multiple process using Labview. The wireless system interface with the PC using DAQ card. According to the process variable received through DAQ,
             Labview generates controlling signal based on the logic implemented in it. Multi process multi-controlling scheme can be implemented so that the user can choose the controlling action as per requirements.
-            The controlling signal is feedbacked using DAQ and transmitted back wireless to control the final control
-            element. In this project we monitor and control tank level wirelessly using Labview and another process of simple pick and place robot using stepper motor.
+            The controlling signal(feedback signal) is received using DAQ and transmitted back wireless to control the final control
+            element. In this project we monitor and control the tank level through wireless communication (Zigbee Protocol) using Labview and another process of simple pick and place robot using stepper motor.
 
         featuredLink:
-          enable: true
+          enable: false
           name: "My academic record"
           url: "https://example.com"
 
@@ -274,7 +284,11 @@ params:
     # title: "Custom Name"
     items:
       - title: Tensorflow Developer Certified
-        content: Had the honor to participate in the Tensorflow Developer certificate exam by Tensorfflow Google and was able to acquire it.
+        content: Had the honor to participate in the Tensorflow Developer certificate exam by Tensorflow Google and was able to acquire it.
+        url: https://images.credential.net/embed/fh9p7k1n.png
+        image: /images/achievment.jpg
+      - title: Winner - FactoryNet Hackathon (ASME IDETC-CIE for AI/ML with Air Force Research Laboratory, AFRL)
+        content: Developed Ontology for hierarchical relation in unbalanced dataset (provided by AFRL) and implemented ConvNeXt Tiny (state -of-the-art) architecture for image classification.
         url: https://images.credential.net/embed/fh9p7k1n.png
         image: /images/achievment.jpg
 

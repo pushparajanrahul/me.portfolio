@@ -325,26 +325,37 @@ header .navbar.animate {
 /* Timeline specific styles */
 .timeline {
     position: relative;
-    padding-left: 3rem;
-    margin: 0 auto;
-    max-width: 900px;
+    margin-left: 20px;
+    padding-left: 50px;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 3px;
+    left: 7px;  /* Adjusted to center the line with the dots */
     top: 0;
     height: 100%;
     width: 2px;
     background-color: #4CAF50;
-    opacity: 1.0;
 }
 
+/* The timeline markers/dots */
 .timeline-item {
     position: relative;
-    margin-bottom: 2.5rem;
-    padding-bottom: 1rem;
+    margin-bottom: 50px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -43px;  /* Adjusted to center with the line */
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #4CAF50;  /* Solid fill color */
+    border: none;  /* Removed border */
+    z-index: 1;  /* Ensure dot appears above the line */
 }
 
 .timeline-item:last-child {
@@ -367,13 +378,12 @@ header .navbar.animate {
     background-color: var(--primary-color) !important;
 }
 
+/* The content card */
 .timeline-content {
-    position: relative;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    background-color: var(--secondary-color) !important;
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .timeline-content:hover {
