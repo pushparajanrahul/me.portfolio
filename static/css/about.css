@@ -255,64 +255,58 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Add these new styles at the bottom of about.css */
-
-/* Image frames styles */
+/* Add these styles to your about.css */
 .frames-container {
     position: relative;
-    height: 600px;
+    height: 500px;  /* Adjust based on your needs */
     width: 100%;
 }
 
 .frame {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 300px;  /* Adjusted base size */
+    height: 300px;
+    overflow: hidden;
 }
 
 .frame img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 2px solid var(--text-color); /* Using theme variable to match your existing styling */
-    padding: 8px;
-    background: transparent;
-    border-radius: 0.5rem; /* Matching your existing image styling */
+    border: 5px solid var(--secondary-color); /* Subtle border */
 }
 
 .frame1 {
     top: 0;
-    left: 20%;
+    left: 0;
     z-index: 3;
+    width: 250px;  /* Slightly smaller */
+    height: 250px;
 }
 
 .frame2 {
-    top: 150px;
-    left: 35%;
+    top: 100px;
+    left: 150px;
     z-index: 2;
+    width: 280px;  /* Medium size */
+    height: 280px;
 }
 
 .frame3 {
-    top: 300px;
-    left: 50%;
+    top: 200px;
+    left: 50px;
     z-index: 1;
+    width: 300px;  /* Largest */
+    height: 300px;
 }
 
-.frame:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-    z-index: 4;
-}
-
-/* Override the existing aboutImg styles for our new layout */
-#single aside.aboutImg {
+/* Remove any existing background or border styles */
+.image.d-flex {
     padding: 0;
 }
 
-#single aside.aboutImg img.frame-img {
-    border-radius: 0.5rem;
-    aspect-ratio: 1/1; /* Square aspect ratio for frames */
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+.img-thumbnail {
+    border: none;
+    padding: 0;
+    background: transparent;
 }
