@@ -32,68 +32,86 @@ and few output parameters such as :
 - Power (kW)
 - RPM 
 
+## Dataset
+
 The dataset was created using the below code snippet:
 
 <script src="https://gist.github.com/pushparajanrahul/26cebe5f2ab80d46f532e3209543b14f.js"></script>
 
    [Built-in Shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) for rich content, along with a [Privacy Config](https://gohugo.io/about/hugo-and-gdpr/) and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
 
-## Gist Simple Shortcode
-```
-{{< gist pushparajanrahul 26cebe5f2ab80d46f532e3209543b14f "data_generator.py" >}}
-```
-<br>
-{{< gist pushparajanrahul 26cebe5f2ab80d46f532e3209543b14f "data_generator.py" >}}
-<br>
+
+The above code generates dataset, measuring the given process variables with 5 min interval for 30days adding some trends and anomalies in the Vibration and introducing a few Temperature changes. 
+
+Also, a few instances of failure event on unfavourable parameter combinations , where the vibration is multiplied by 1.5 times or the temperature has risen 10 degrees beyond the operating range etc.
+
+The obtained dataset is then dumped to a csv as it well be convenient while handling feature engineering in upcoming stage.
+
+## Data Preprocessing
 
 
+The data, now which is available in csv format is read as a pandas dataframe. Now each process variable is taken in batch of 12, as we have each recording at 5 min interval representing 1 hour in total.
 
-## Twitter Simple Shortcode
-```
-{{</* tweet GoHugoIO 1315233626070503424 */>}}
-```
-<br>
-{{< tweet GoHugoIO 1315233626070503424 >}}
-<br>
+By this, we calculate the rolling mean and rolling standard deviation which is important in indicating gradual deterioration of a steady state.  
 
+We also calculate rate of change of the PV, which might indicate problem/ and abnormality in our use case/ general scenario.
 
+These features are then scaled consistently to treat feature equally while training and predicting in later stages.For this we use the StandardScalar() function from scikit-learn. 
 
-## Vimeo Simple Shortcode
-```
-{{</* vimeo 146022717 */>}}
-```
-<br>
-{{< vimeo 146022717 >}}
-<br>
+To just brief what the Standard Scalar does:
 
+```commandline
 
+# Consider the example data
+original_data = pd.DataFrame({
+    'temperature': [100, 150, 200],   # Assuming Temperature holds large values
+    'pressure': [0.1, 0.2, 0.3]       # Assuming Pressure holds small values
+})
 
-## Youtube Simple Shortcode
-```
-{{</* youtube w7Ft2ymGmfc */>}}
-```
-<br>
-{{< youtube w7Ft2ymGmfc >}}
-<br>
+print("Before scaling:")
+print(original_data)
 
-## Theme Custom Shortcodes
+scaler = StandardScaler()
+scaled = scaler.fit_transform(original_data)
+scaled_df = pd.DataFrame(scaled, columns=original_data.columns)
 
-These shortcodes are not Hugo built-ins, but are provided by the theme.
-
-### Responsive Images with Cloudinary
-
-You can learn more about this [here](https://cloudinary.com/documentation/responsive_images).
-
-Set the `cloudinary_cloud_name` parameter in your site config to use this shortcode.
-
-```
-{{</* dynamic-img src="/my/image/on/cloudinary" title="A title for the image" */>}}
+print("\nAfter scaling:")
+print(scaled_df)
 ```
 
-Note that you do not include the file extension (e.g. `.png`) in the `src` parameter, as the shortcode will automatically determine the best quality and format for the user's device.
 
-Optionally, you can customize the general CSS styles for the image:
+Now, for each feature here, it performs:
 
+z = (x - μ) / σ
+
+where, 
+
+- x = original value
+- μ = mean of the feature
+- σ = standard deviation
+- z = scaled value
+
+
+And,the output would look like,
+
+```commandline
+Before scaling:
+   temperature  pressure
+0         100       0.1
+1         150       0.2
+2         200       0.3
+
+After scaling:
+   temperature  pressure
+0    -1.224745 -1.224745
+1     0.000000  0.000000
+2     1.224745  1.224745
 ```
-{{</* dynamic-img src="/my/image/on/cloudinary" title="A title for the image" style="max-width:60%" */>}}
-```
+
+The below code snippet is used for dat preprocessing:
+
+<script src="https://gist.github.com/pushparajanrahul/f00a30cb589daa5948afb0f0b15d61b1.js"></script>
+
+## Training
+
+
