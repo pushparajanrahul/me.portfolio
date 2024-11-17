@@ -302,9 +302,9 @@ params:
         content: An end-to-end ML system that predicts industrial pump failures using sensor data, featuring real-time monitoring through a Streamlit dashboard and robust cloud deployment on AWS.
         image: /images/projects/Project1.jpg
         featured:
-          enable: false
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          enable: true
+          name: Click here
+          link: https://pushparajanrahul.netlify.app/blogs/project_1/
         badges:
           - "Python"
           - "TensorFlow"
@@ -322,8 +322,8 @@ params:
         image: /images/projects/project1.png
         featured:
           enable: false
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          name: Click here
+          link: https://pushparajanrahul.netlify.app/blogs/project_1/
         badges:
           - "Python"
           - "TensorFlow"
