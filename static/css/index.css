@@ -478,7 +478,7 @@ header .navbar.animate {
     }
 
     .timeline::before {
-        left: 7px;
+        left: 3.5px;
     }
 
     .timeline-content {
