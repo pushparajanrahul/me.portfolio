@@ -5,10 +5,16 @@
         <div class="bg-transparent row justify-content-center px-3 py-5">
             {{ if .Site.Params.about.image }}
             <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
-                <div class="image d-flex px-5">
-                    <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto" alt="">
+                <div class="image-container d-flex flex-column gap-4">
+                    <!-- First image -->
+                    <div class="image d-flex px-5">
+                        <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto" alt="">
+                    </div>
+                    <!-- Second image -->
+                    <div class="image d-flex px-5">
+                        <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto" alt="">
+                    </div>
                 </div>
-            </div>
             {{ end }}
             <div class="col-sm-12 col-md-12 col-lg-8 content">
                 {{ .Site.Params.about.content | markdownify }}
