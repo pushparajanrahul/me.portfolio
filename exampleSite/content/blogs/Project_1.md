@@ -143,7 +143,7 @@ Tree 1: Checks vibration + temperature → Predicts Failure
 Tree 2: Checks pressure + flow_rate → Predicts Failure
 Tree 3: Checks rpm + power → Predicts Normal
 ```
-*Note: I will be soon writing few blog articles on each AI algorithms and will tag along to refresh the concepts along.*
+*Note: I will be soon writing few blog articles on each AI algorithms and will tag along to refresh the concepts.*
 
 The code snippet is given below:
 
