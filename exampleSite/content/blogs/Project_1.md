@@ -1,6 +1,6 @@
 ---
 title: "Predictive Maintenance ML System for Industrial Pumps with Cloud Deployment"
-date: 2021-10-15T19:53:33+05:30
+date: 2024-10-15T19:53:33+05:30
 draft: false
 author: "Rahul Pushparajan"
 tags:
