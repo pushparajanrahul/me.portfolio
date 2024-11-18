@@ -23,7 +23,7 @@ This project aims in predicting the chances of failure of an Industrial motor, u
 Here I have created a synthetic dataset considering few input parameters such as :
 
 - Pressure (PSI)
-- Temperature (degC)
+- Temperature (<sup>o</sup>C)
 - Vibration (mm/s)
 - FLow Rate (gal/min)
 
@@ -43,7 +43,7 @@ The dataset was created using the below code snippet:
 
 The above code generates dataset, measuring the given process variables with 5 min interval for 30days adding some trends and anomalies in the Vibration and introducing a few Temperature changes. 
 
-Also, a few instances of failure event on unfavourable parameter combinations , where the vibration is multiplied by 1.5 times or the temperature has risen 10 degrees beyond the operating range etc.
+Also, a few instances of failure event on unfavourable parameter combinations , where the vibration is multiplied by 1.5 times or the temperature has risen 10 <sup>o</sup>C beyond the operating range etc.
 
 The obtained dataset is then dumped to a csv as it well be convenient while handling feature engineering in upcoming stage.
 
@@ -114,7 +114,47 @@ The below code snippet is used for dat preprocessing:
 
 ## Training
 
+
+I have used RandomForest algorithm on which the preprocessed and scaled dataset is trained.
+
+The hyperparameters used here are:
+```
+- test_size = 0.2 # for train-test split
+- n_estimators = 100 # no of decision trees in the forest
+```
+
+So, considering a realword scenario, we can say how the voting might happen as below: 
+
+```commandline
+
+# Consider a real-world example
+
+pump_reading = {
+    'vibration': 3.2,
+    'temperature': 85,
+    'pressure': 45,
+    'flow_rate': 2.1,
+    'power': 75,
+    'rpm': 3000
+}
+
+Trees voting process:
+Tree 1: Checks vibration + temperature → Predicts Failure
+Tree 2: Checks pressure + flow_rate → Predicts Failure
+Tree 3: Checks rpm + power → Predicts Normal
+```
+*Note: I will be soon writing few blog articles on each AI algorithms and will tag along to refresh the concepts along.*
+
 The code snippet is given below:
 
 {{< gist pushparajanrahul f00a30cb589daa5948afb0f0b15d61b1 "train_model.py" >}}
+
+The model is finally saved using Joblib function as pickel file to be used later in our dashboard/ production environment.
+
+
+## Dashboard using Streamlit
+
+Streamlit is very simple to learn and for a beginner it still may take some time. I had few assistance of the official streamlit documentation and ClaudeAI to help me complete just the dashboard part at the time of building it.
+
+The interactive display windows are given below:
 
