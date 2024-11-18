@@ -5,8 +5,11 @@ draft: false
 author: "Rahul Pushparajan"
 tags:
   - Python
+  - Feature Engineering
+  - RandomForest
   - Docker
   - AWS
+  - Streamlit
 image: /images/projects/Project1.jpg
 description: "An end-to-end ML system that predicts industrial pump failures using sensor data, featuring real-time monitoring through a Streamlit dashboard and robust cloud deployment on AWS"
 toc: 
@@ -37,9 +40,6 @@ and few output parameters such as :
 The dataset was created using the below code snippet:
 
 <script src="https://gist.github.com/pushparajanrahul/26cebe5f2ab80d46f532e3209543b14f.js"></script>
-
-   [Built-in Shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) for rich content, along with a [Privacy Config](https://gohugo.io/about/hugo-and-gdpr/) and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-
 
 The above code generates dataset, measuring the given process variables with 5 min interval for 30days adding some trends and anomalies in the Vibration and introducing a few Temperature changes. 
 
