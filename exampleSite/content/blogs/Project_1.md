@@ -110,8 +110,11 @@ After scaling:
 
 The below code snippet is used for dat preprocessing:
 
-<script src="https://gist.github.com/pushparajanrahul/f00a30cb589daa5948afb0f0b15d61b1.js"></script>
+{{< gist pushparajanrahul f00a30cb589daa5948afb0f0b15d61b1 "preprocess.py" >}}
 
 ## Training
 
+The code snippet is given below:
+
+{{< gist pushparajanrahul f00a30cb589daa5948afb0f0b15d61b1 "train_model.py" >}}
 
